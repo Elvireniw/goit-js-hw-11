@@ -1,0 +1,149 @@
+.container {
+  max-width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+b,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #efefef;
+}
+
+button {
+  position: absolute;
+  margin-left: 490px;
+  margin-top: 3px;
+  cursor: pointer;
+  width: 60px;
+  min-height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover,
+button:focus {
+  background: #404bbf;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  width: 500px;
+  min-height: 50px;
+  padding: 8px 30px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+input:hover,
+input:focus {
+  outline: none !important;
+}
+
+.search-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.gallery {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+
+.photo-box {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+.photo-info {
+  justify-content: space-around;
+  display: flex;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.photo-info-tag {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.photo-info-tag-value {
+  font-weight: bold;
+}
+.js-span {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 10px auto;
+  font-weight: bolder;
+  background-color: tomato;
+}
+
+@media screen and (min-width: 668px) {
+  .container {
+    max-width: 768px;
+  }
+  .photo-box {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .photo-box {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
