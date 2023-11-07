@@ -126,7 +126,6 @@ img {
   padding: 10px 10px;
   margin: 10px auto;
   font-weight: bolder;
-  background-color: tomato;
 }
 
 @media screen and (min-width: 668px) {

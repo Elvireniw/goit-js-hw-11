@@ -4,7 +4,6 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { serchingPhoto } from "./js/api";
 import createMarkup from "./js/createMarkup";
 
-
 const formElement = document.getElementById('search-form');
 const inputValue = formElement.querySelector('input[name="searchQuery"]');
 const btnElement = formElement.querySelector('button[type="submit"]');
@@ -83,7 +82,7 @@ async function getImage(photo) {
           if (thisPage !== 1) {
               spanElement.classList.remove('is-hidden')
               spanElement.textContent = `End of the search. We found ${totalHitsImg} images.`;
-              Notiflix.Notify.info('All photos are downloaded.');
+              Notiflix.Notify.info(' We are sorry, but you have reached the end of search results.');
           }
       }
     
